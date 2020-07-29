@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HellowWorldBlank.GreetPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" >
+            <Label Text="FTasdfasdfasdfasdf"></Label>
+            <StackLayout  BindingContext="{x:Reference slider1}">
+                <BoxView Color="Green" Opacity="{Binding Value}"></BoxView>
+                <Label 
+                Text="{Binding Value, 
+                    StringFormat='Value is {0:F2}'}" 
+                Opacity="{Binding Value}"
+                x:Name="label1"></Label>
+                <Slider x:Name="slider1"></Slider>
+            </StackLayout>
+            <StackLayout>
+                <BoxView Color="Green" Opacity="{Binding Source={x:Reference slider2}, Path=Value}"></BoxView>
+                <Label BindingContext="{x:Reference slider2}" 
+                Text="{Binding Value, 
+                    StringFormat='Value is {0:F2}'}" 
+                Opacity="{Binding Value}"
+                x:Name="label2"></Label>
+                <Slider x:Name="slider2"></Slider>
+            </StackLayout>
+            
+            
+            
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
