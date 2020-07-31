@@ -17,8 +17,14 @@ namespace HellowWorldBlank
             //MainPage = new StackedLayoutExercise2();
             //MainPage = new GridPage();
             //MainPage = new GridFromCode();
-            MainPage = new GridExample1();
-            MainPage = new GridExample2();
+            //MainPage = new GridExample1();
+            //MainPage = new GridExample2();
+            //MainPage = new MyAbsoluteLayout();
+            //MainPage = new AbsoluteLayoutCode();
+            //MainPage = new AbsouteLayoutEx2();
+            //MainPage = new RelativeLayoutXaml();
+            //MainPage = new RelativeLayoutCode();
+            MainPage = new RelativeLayoutEx1();
         }
 
         protected override void OnStart()
